@@ -14,8 +14,8 @@ def cleanup_directory(extract_to):
     shutil.rmtree(extract_to)
 
 zipname_ls = [fn for fn in os.listdir(data_dir) if fn.endswith('.zip')]
-idx = zipname_ls.index('Standard_Donkey_Juvenile.ovl.zip')
-zipname_ls = zipname_ls[idx:]
+# idx = zipname_ls.index('Standard_Donkey_Juvenile.ovl.zip')
+# zipname_ls = zipname_ls[idx:]
 
 from tqdm import tqdm
 from utils.preprocess import convert_json_2_npy
